@@ -407,181 +407,172 @@ PLAY &rarr;
 <!-- - - - - - - - - - - - - - - - - -->
 
 <p id="evolution_intro">
-Now, let's let our population of players <i>evolve over time</i>. It's a 3-step dance:
+次は、人口を増やした上で総当たり戦を何度も繰り返す。その都度、総当たり戦に参加する<i>プレイヤーの入れ替え</i>を行う。
+具体的には、以下の3ステップを行う。
 </p>
 <p id="evolution_intro_1">
-<b>1. PLAY A TOURNAMENT</b><br>
-Let them all play against each other, and tally up their scores.
+<b>1. 総当たり戦をやる</b><br>
+人口全体で総当たり戦を行う。
 </p>
 <p id="evolution_intro_2">
-<b>2. ELIMINATE LOSERS</b><br>
-Get rid of the 5 worst players. (if there's a tie, pick randomly between them)
+<b>2. 弱者を排除する</b><br>
+スコアが一番低かった5人はここで人口から抜ける。スコアタイがあった場合は、ランダムで選ぶ。
 </p>
 <p id="evolution_intro_3">
-<b>3. REPRODUCE WINNERS</b><br>
-Clone the 5 best players. (if there's a tie, pick randomly between them)
+<b>3. 強者を分身させる</b><br>
+スコアが一番高かった5人を分身させる。スコアタイがあった場合は、ランダムで選ぶ。
 </p>
 <p id="evolution_intro_footer">
-...and REPEAT, for as long as you'd like.
-Note: you don't have to wait for people to literally die &amp; reproduce for culture to evolve --
-all that's needed is that "unsuccessful" behaviors go away, and "successful" behaviors are imitated.
-So now...
+上記のステップを何度でも繰り返しやる。
+弱者のやり方は廃れ、強者のやり方は流行る仕組みである。
+では、、、
 </p>
 <p id="evolution_intro_button">
-...let's see this in action. &rarr;
+早速やってみよう。 &rarr;
 </p>
 
 <p id="evo_1">
-Say we start with the following population of players:
-<span class="all_c">15 Always Cooperates</span>,
-<span class="all_d">5 Always Cheats</span>, and
-<span class="tft">5 Copycats</span>.
-(We'll ignore <span class="grudge">Grudger</span> &amp; <span class="prober">Detective</span> for now)
+例えば、開始の人口構成がこの25人だったとする:
+<span class="all_c">協力ネキ15人</span>、
+<span class="all_d">ゲス野郎5人</span>、そして
+<span class="tft">真似っこ5人</span>。
+（今は、<span class="grudge">ネチネチ野郎</span>と<span class="prober">バーロー</span>はいないものとする。）
 <br><br>
-We're going to do the tournament-eliminate-reproduce dance a dozen times or so.
-Let's make another bet! Who do you think will win the <i>first</i> tournament?
-<b>PLACE YOUR BETS, AGAIN:</b>
+今から、この人口で、総当たり戦を10回以上連続で行うわけだが、
+<i>最初の総当たり戦</i>は、誰がトップ5人に残るかな？
+<b>予想しよう:</b>
 </p>
 
 <p id="evo_2_all_c">
-Makes sense, <span class="all_c">Always Cooperate</span> outnumbers everyone else right now...
+なるほど、<span class="all_c">協力ネキ</span>が一番多いから、その分有利に見えなくもない。
 </p>
 <p id="evo_2_all_d">
-Makes sense, <span class="all_d">Always Cheat</span> has a lot of <span class="all_c">Always Cooperates</span> to exploit...
+なるほど、<span class="all_c">協力ネキ</span>というカモが多い分、<span class="all_d">ゲス野郎</span>が一番有利かもしれない。
 </p>
 <p id="evo_2_tft">
-Makes sense, <span class="tft">Copycat</span> won the tournament last time, why not again?...
+なるほど、<span class="tft">真似っこ</span>はさっき優勝していたし、今回も勝つかも！
 </p>
 <p id="evo_2">
-Let's see if you're correct:
+では、答えあわせしよう:
 </p>
 
 <p id="label_play_tournament">
-1) play tournament
+1) 総当たり戦をやる
 </p>
 <p id="label_eliminate_bottom_5">
-2) eliminate bottom 5
+2) 弱者を排除する
 </p>
 <p id="label_reproduce_top_5">
-3) reproduce top 5
+3) 強者を分身させる
 </p>
 
 <p id="evo_3_all_c">
-Alas, <span class="all_c">Always Cooperate</span> got eaten up by
-<span class="all_d">Always Cheat</span>, whose numbers have now increased by 5.
+<span class="all_c">協力ネキ</span>が、天敵の<span class="all_d">ゲス野郎</span>のひたすらカモにされてしまったようだ。
+<span class="all_c">協力ネキ</span>は5人減り、<span class="all_d">ゲス野郎</span>が5人増えた！
 </p>
 <p id="evo_3_all_d">
-Sadly, you were correct! The <span class="all_d">Always Cheaters</span> won this time, 
-and their numbers increased by 5.
+予想通り、<span class="all_d">ゲス野郎</span>がこの総当たり戦を制したようだ。
+<span class="all_c">協力ネキ</span>は5人減り、<span class="all_d">ゲス野郎</span>が5人増えた！
 </p>
 <p id="evo_3_tft">
-Alas, <span class="tft">Copycat</span> did not win – but at least they didn't do as bad
-as <span class="all_c">Always Cooperate</span>. They got eaten up by <span class="all_d">Always Cheat</span>,
-whose numbers have now increased by 5.
+残念。<span class="tft">真似っこ</span>はトップ5に至らず。
+<span class="all_c">協力ネキ</span>が<span class="all_d">ゲス野郎</span>の餌食になってしまったせいだろう。
+<span class="all_c">協力ネキ</span>は5人減り、<span class="all_d">ゲス野郎</span>が5人増えた！
 </p>
 <p id="evo_3">
-But let's try a few more rounds of this...
+では、次の総当たり戦を行ってみよう。
 </p>
 
 <p id="evo_4">
-<span class="all_d">Always Cheat</span> is still growing,
-at the expense of <span class="all_c">Always Cooperate</span>...
+<span class="all_d">ゲス野郎</span>がどんどん増えている！
+一方、<span class="all_c">協力ネキ</span>が一方的に減っている！
 </p>
 
 <p id="evo_5">
-And now, all the <span class="all_c">Always Cooperates</span> are dead.
-But, wait...
+とうとう<span class="all_c">協力ネキ</span>は絶滅してしまった。
+でも、これはどういう事だ？
 </p>
 
 <p id="evo_6">
-That's right: the <span class="all_d">Always Cheats</span> became a victim of their own success!
-They exploited the naive <span class="all_c">Always Cooperators</span>,
-but once they ran out of them, they had to face the <span class="tft">Copycats</span>:
-who <i>are</i> nice, but not naive.
+そう、<span class="all_d">ゲス野郎</span>が増えすぎて、<span class="all_d">ゲス野郎</span>同士で潰しあいをしだしている！
+一方、<span class="tft">真似っこ</span>はかろうじて生き残っている。
+<span class="tft">真似っこ</span>は基本やさしいが、<span class="all_c">協力ネキ</span>ほど甘くはないのだ！
 </p>
 
 <p id="evo_7">
-By simply copying the other player's moves,
-<span class="tft">Copycats</span> can play nice with each other,
-while <span class="all_d">Always Cheats</span> just cheat themselves!
-Not only that, but it also means <span class="tft">Copycat</span>
-can give <span class="all_d">Always Cheat</span>
-a taste of their own medicine.
+<span class="tft">真似っこ</span>はやさしいが、<span class="all_d">ゲス野郎</span>にやられてもちゃんとやり返す一面もある。
+一方、<span class="all_d">ゲス野郎</span>は他の<span class="all_d">ゲス野郎</span>に対してもゲスだ。
 </p>
 
 <p id="evo_8">
-And so, as a result...
+結果、、、
 </p>
 
 <p id="evo_9">
-...<span class="tft">Copycat</span> inherits the earth.
+<span class="tft">真似っこ</span>がまたもや勝ってしまった。強い！
 </p>
 <p id="evo_9_all_c">
-So, although your bet was off -- the nice-but-naive <span class="all_c">Always Cooperators</span>
-were doomed from the start -- in the end, a <i>smart</i> form of niceness prevailed,
-and the <span class="all_d">Always Cheaters</span> were squashed.
+やさしすぎる<span class="all_c">協力ネキは</span>は残念ながら勝ち目がなかったが、
+戦える<span class="tft">真似っこ</span>が仇をとってくれたようだ。
 </p>
 <p id="evo_9_all_d">
-So, in the short run you were right - <span class="all_d">Always Cheat</span> won the first few rounds,
-but in the end, its exploitativeness was its downfall.
+短期戦では、予想通り<span class="all_d">ゲス野郎</span>が有利だったが、
+長期的には<span class="all_d">ゲス野郎</span>同士の潰しあいは避けられなかったようだ。
 </p>
 <p id="evo_9_tft">
-So, in the long run, you were right - <span class="tft">Copycat</span> wins!
-<span class="all_d">Always Cheat</span> may have won in the short run,
-but its exploitativeness was its downfall.
+短期戦では<span class="all_d">ゲス野郎</span>が強かったが、
+長期戦では<span class="tft">真似っこ</span>が強かった！
 </p>
 <p id="evo_9_end">
-This reminds me of a quote:
+エルバート・ハバード氏の言葉だが、
 <br><br>
-<i>"We are punished by our sins, not for them."</i><br>
-~ Elbert Hubbard
+<i>「我々は自分の罪のために罰されるのではなく、自分の罪によって罰されるのだ」
 </p>
 <p id="evo_9_btn">
-(oh, and by the way...)
+ちなみに、、、
 </p>
 
 <p id="evo_10">
-(...this result is similar even if we put
-<span class="grudge">Grudger</span> &amp; <span class="prober">Detective</span> back in:)
+（<span class="grudge">ネチネチ野郎</span>や<span class="prober">バーロー</span>が参戦しても、似た結果になる。）
 </p>
 
 <p id="evo_autoplay">
-start the evolution process!
+開始
 </p>
 <p id="evo_autoplay_stop">
-stop the evolution process
+停止
 </p>
 
 <p id="evo_10_followup">
-(Note: sometimes, a few <span class="grudge">Grudgers</span> may stick around,
-because when all players except <span class="grudge">Grudger</span> &amp; <span class="tft">Copycat</span> 
-are eliminated, the two tie.)
+（注: <span class="grudge">ネチネチ野郎</span>が数人、残ることもある。
+<span class="grudge">ネチネチ野郎</span>と<span class="tft">真似っこ</span>は、
+お互いを裏切らないから共存できるのだ。）
 <br><br>
-So, it seems the math of game theory is telling us something:
-that <span class="tft">Copycat's</span> philosophy,
-"Do unto others as you would have them do unto you", may be not just a 
-<i>moral</i> truth, but also a <i>mathematical</i> truth.
-However...
+現時点で、ゲーム理論から学べることがあるとすれば、
+「自ら敵を作らない。しかしやられたらやり返す。」を体現している
+<span class="tft">真似っこ</span>のやり方は合理的であるということだ。
+これは<i>モラル</i>の観点でも、<i>数学的な（ゲーム理論的な）</i>観点でも、そうなのだ。
+しかし、、、
 </p>
 <p id="evo_10_btn">
-...there's a problem: &rarr;
+疑問がある &rarr;
 </p>
 
 <p id="evo_11">
-Look around. The world's full of total jerkwads.
+そもそも、理論と現実は違う。現実にはゲスが多い。
 <br><br>
-If <span class="tft">Copycat</span> is the strategy in this repeated game of trust that's so powerful --
-that even soldiers in World War I trenches independently "evolved" a similar strategy, called "live and let live" -- 
-why, then, are there so many un-trusting, un-trustworthy people?
-What's causing our epidemic of un-trust?
+仮に<span class="tft">真似っこ</span>がこの信頼ゲームにおいて優秀だとして、
+なぜ現実世界では<span class="tft">真似っこ</span>だらけにならないのだろうか。
+なぜ、我々現代人はいまだにお互いを不信に思い続けるのか。
+この不信感は、どこから発生するのだろうか。
 <br><br>
-A clue's in that sentence itself. "In <i>this</i> repeated game of trust."
-So far we've only talked about change in the players:
-what about <i>a change in the game?</i>
-What could lead to...
+問題は、信頼ゲームのそもそものルールにある。これまでのルールでは<span class="tft">真似っこ</span>が無双していたが、
+果たして、信頼ゲームのルールを変えても、そうなるのだろうか。
+
+<i>ルールが変わってしまえば</i>、それでも
 </p>
 <p id="evo_11_btn">
-...the evolution of <i>distrust?</i>
+果たして<i>それでも信頼は芽生える？</i>
 </p>
 
 <!-- - - - - - - - - - - - - - - - - -->
